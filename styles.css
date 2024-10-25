@@ -500,3 +500,34 @@ body {
         font-size: 0.8em;
     }
 }
+
+/* Social Links Styling */
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ffd700; /* Golden color on hover */
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.facebook:hover {
+    color: #1877F2;
+}
+
+.instagram:hover {
+    color: #C13584;
+}
