@@ -428,3 +428,25 @@ footer a:hover {
         opacity: 1;
     }
 }
+
+/* Header Scroll Text Animation */
+.scroll-text-container {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+
+.scroll-text {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0; /* Start as invisible */
+    transition: transform 0.5s ease-in-out; /* Smooth movement */
+    animation: fadeInOut 2s ease-in-out infinite; /* Infinite loop for fading */
+}
+
+/* Keyframes for fade in/out effect */
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}

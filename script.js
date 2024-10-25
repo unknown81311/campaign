@@ -116,3 +116,12 @@ window.addEventListener('click', function(event) {
         popup.style.display = 'none';
     }
 });
+
+window.addEventListener("scroll", function() {
+    // Get the scroll position relative to the total scrollable height
+    const scrollPosition = window.scrollY;
+    const scrollText = document.querySelector(".scroll-text");
+
+    // Move the text up based on scroll position
+    scrollText.style.transform = `translateY(-${scrollPosition / 5}px)`;
+});
