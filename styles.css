@@ -23,7 +23,7 @@ body {
 
 /* Header Section */
 .header {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to bottom right, #0d0d0ded, #1a1a1aed);
     display: flex;
     justify-content: center;
@@ -284,23 +284,33 @@ body {
 }
 
 /* Footer */
-footer {
-    background-color: #1a1a1a; /* Dark background */
+.info-footer {
+    background-color: #111;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
+    position: relative;
+    clear: both;
 }
 
-footer a {
-    color: #67B26F; /* Green color for links */
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: 600;
+/* New Copyright Footer */
+.copyright-footer {
+    background-color: #333;
+    color: #aaa;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
 }
 
-footer a:hover {
-    color: #4ca2cd; /* Change link color on hover */
+.copyright-footer p {
+    margin: 0;
+    font-style: italic;
 }
+
 
 /* Popup Styles */
 .popup {
@@ -449,4 +459,44 @@ footer a:hover {
 @keyframes fadeInOut {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
+}
+
+
+/* Media Query for mobile devices (width < 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks the cards vertically */
+    }
+
+    .card {
+        flex: 1 1 100%; /* Cards take up full width on mobile */
+    }
+
+    .about-me {
+        padding: 20px; /* Reduces padding for smaller screens */
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 10px; /* Adjusts footer padding for smaller screens */
+        font-size: 0.9em;
+    }
+}
+
+/* Media Query for extra small screens (width < 480px) */
+@media screen and (max-width: 480px) {
+    .card {
+        padding: 10px; /* Reduces padding inside the cards */
+        font-size: 0.9em;
+    }
+
+    .about-me {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 8px;
+        font-size: 0.8em;
+    }
 }
