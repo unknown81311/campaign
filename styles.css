@@ -1,0 +1,430 @@
+:root{
+    --background-image : url("american-flag.png");
+}
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Google Fonts */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Header Section */
+.header {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0d0d0ded, #1a1a1aed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.header::before{
+    content:'';
+    inset: 0;
+    position: absolute;
+
+    background: var(--background-image) center center / cover no-repeat fixed;
+    z-index: -1;
+}
+
+.header-content {
+    max-width: 700px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animated-title {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    animation: bounceIn 2.5s infinite alternate;
+}
+
+.sub-text {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff007b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff5c8d;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 50px 20px;
+    background-color: #1a1a1a; /* Dark background */
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #67B26F; /* Green color for titles */
+}
+
+.learn-more-button {
+    padding: 10px 20px;
+    background-color: #4ca2cd;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #5fb3de;
+}
+
+/* Parallax Learn More Section */
+.learn-more {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0d0d0ded, #1a1a1aed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed; /* Parallax Effect */
+    position: relative;
+}
+
+.learn-more::before{
+    content:'';
+    inset: 0;
+    position: absolute;
+
+    background: var(--background-image) center center / cover no-repeat fixed;
+    z-index: -1;
+}
+
+.learn-more h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.vision-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent dark card */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 185px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Show pointer on hover */
+    transition: transform 0.2s; /* Card hover effect */
+        display: grid;
+    grid-template:
+        "header"
+        "arrow";
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card h3 {
+    grid-area: header;
+    margin-bottom: 10px;
+    color: #67B26F; /* Green color for card titles */
+}
+
+.icon-container {
+    grid-area: arrow;
+    position: relative; /* Allow positioning of the icon within the card */
+    display: flex;
+    justify-content: flex-end; /* Align icon to the right */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Space above the icon */
+}
+
+.clickable-icon {
+    width: 20px; /* Size of the icon */
+    height: 20px; /* Size of the icon */
+    fill: #67B26F; /* Color of the icon */
+    transition: transform 0.2s; /* Animation on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.card:hover .clickable-icon {
+    transform: translateX(5px); /* Move icon slightly on hover */
+}
+
+/* Styles for the Golden Card */
+.golden-card {
+    border: 2px solid #ffd700; /* Gold border */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffd700; /* Gold text */
+    font-weight: bold;
+    margin-top: 30px; /* Adds some space between the main cards and the golden card */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.golden-card::before{
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    background: inherit;
+    border-radius: calc(.21 * 25px);
+    border: 1px solid transparent;
+    -webkit-mask: linear-gradient(145deg, #f7e45a, #f0c43d);
+    -webkit-mask-composite: xor;
+}
+
+/* Shiny hover effect */
+.golden-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.6);
+}
+
+/* Golden card text styling */
+.golden-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.golden-card p {
+    font-size: 1.1em;
+}
+
+.golden-card .icon-container {
+    margin-top: 10px;
+}
+
+.golden-card .clickable-icon {
+    fill: #ffd700; /* Gold-colored icon */
+    transition: fill 0.3s ease;
+}
+
+.golden-card:hover .clickable-icon {
+    fill: #fff; /* Change icon color on hover */
+}
+
+
+
+/* Join the Movement Section */
+.join {
+    padding: 50px 20px;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff;
+    text-align: center;
+}
+
+.join h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333; /* Dark input background */
+    color: #fff; /* Light input text */
+}
+
+.join-form button {
+    padding: 10px 20px;
+    background-color: #ff007b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.join-form button:hover {
+    background-color: #ff5c8d;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #67B26F; /* Green color for links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #4ca2cd; /* Change link color on hover */
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+}
+.popup .content{
+    overflow-y: scroll;
+    height: 50vh;
+    padding: 5px;
+}
+
+/* width */
+.popup .content::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.popup .content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.popup .content::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.popup .content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.popup-container {
+    background-color: #1e1e1e; /* Dark popup background */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.popup-container p {
+    margin: 0;
+}
+
+.popup-container #popup-image{
+    width: 50%;
+    float: right;
+    border-radius: 9px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5px;
+}
+
+/* Skeleton Loader Styles */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Skeleton Loader Styles */
+.skeleton-loader {
+    background-color: #444; /* Darker shade for skeleton */
+    border-radius: 5px;
+    height: 100px; /* Height of the skeleton */
+    width: 100%; /* Full width */
+    animation: shimmer 1.5s infinite; /* Shimmer effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -100px 0;
+    }
+    100% {
+        background-position: 100px 0;
+    }
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white; /* Change close button color on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes bounceIn {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
