@@ -20,7 +20,7 @@ document.querySelectorAll('.card,.golden-card').forEach(card => {
                 description = `<p>Social sustainability is at the heart of building a thriving, healthy, and united society. It’s about ensuring that the decisions we make today improve the quality of life for future generations. That’s why I am committed to addressing key social issues that have long-term impacts on our communities.</p>
 
 <h3>1. Health and Well-being</h3>
-<p>For too long, we have seen the negative impact of fast food on our health, especially in our youth. To combat this, I propose a <strong>100% tax on fast food</strong>, which will serve as a deterrent and encourage healthier choices. This measure aims to improve public health and reduce the long-term burden on our healthcare system. The revenue generated will be reinvested in public health initiatives, such as nutrition education and access to healthy food options. Furthermore, this tax will incentivize corporations to produce healthier items, pushing the market toward better food choices for consumers.</p>
+<p>For too long, we have seen the negative impact of fast food on our health, especially in our youth. To combat this, I propose a <strong>15% tax on fast food</strong>, which will serve as a deterrent and encourage healthier choices. This measure aims to improve public health and reduce the long-term burden on our healthcare system. The revenue generated will be reinvested in public health initiatives, such as nutrition education and access to healthy food options. Furthermore, this tax will incentivize corporations to produce healthier items, pushing the market toward better food choices for consumers.</p>
 
 <h3>2. Physical Education and Youth Development</h3>
 <p>Our children deserve the best opportunities to grow up healthy and strong. Inspired by the physical education initiatives of the 1960s under President Kennedy, I will <strong>reintroduce more rigorous physical activities in public schools</strong>. By updating the school curriculum, we will ensure that students are physically active and developing the skills and habits that lead to healthier lives. Physical education will not just be an afterthought, but a core part of our children’s learning experience, helping to reduce obesity rates and promote mental well-being.</p>
@@ -58,27 +58,31 @@ document.querySelectorAll('.card,.golden-card').forEach(card => {
             case 'special-vision':
                 document.querySelector("#popup > div").style.borderColor="gold";
                 title = 'Restoring the American Dream';
-                description = `   <p>For too long, the American people have been <strong>deceived</strong>, <em>misled</em>, and <u>betrayed</u> by the very leaders they elected to protect their interests. Corruption, foreign entanglements, and dishonesty have eroded the trust between the people and their government, leaving many feeling disillusioned with the system. But I believe in the greatness of our nation and the resilience of its people.</p>
-
-    <blockquote>
-        <p>“Together, we can achieve a brighter future.”</p>
-    </blockquote>
-
-    <p>Both sides of the political spectrum have divided us as a people and a nation. This division only weakens us. We must remember that we are one people, living under the same Constitution. It is time to come together, united by our shared values and common goals, to restore the strength of our nation.</p>
-
-    <h3>Restoring Our Identity</h3>
-    <p>Restoring our national identity and pride in ourselves is critical for the sovereignty and future of our country. If we don’t prioritize ourselves, our interests, and our people, we allow other nations to take advantage of our divisions and weaknesses. We must stand together, strong and united, to rebuild what has been lost.</p>
-
-    <h3>Hope and Opportunity</h3>
-    <p>We must restore what once made America a beacon of hope—a place where hard work, fairness, and transparency can allow everyone to achieve their dreams. Through policies that emphasize accountability, sustainability, and the protection of our fundamental rights, we will rebuild the foundations of the American Dream.</p>
-
-    <h4>Addressing Obesity</h4>
-    <p>One of the pressing issues we face today is the epidemic of <strong>obesity</strong>, which consumes American lives and prosperity. This crisis not only affects individual health but also burdens our healthcare system and stifles economic growth. We must take decisive action to promote healthier lifestyles and ensure that our citizens can live fulfilling, productive lives.</p>
-
-    <h4>Foreign Policy Focus</h4>
-    <p>As we confront external influences, such as questionable alliances with countries like <em>Israel</em>, we must put the American people's interests first. Our foreign policy should be driven by what strengthens our nation, not by serving the agendas of so-called allies who do not stand by us in times of need. It's time for leadership that works for the American people—not for corrupt officials or foreign powers.</p>
-
-    <p><strong>Together, we will restore America to its rightful place: a nation of integrity, freedom, and opportunity for all.</strong></p>`;
+                description = `<p>For too long, the American people have been <strong>deceived</strong>, <em>misled</em>, and <u>betrayed</u> by the very leaders they elected to protect their interests. Corruption, foreign entanglements, and dishonesty have eroded the trust between the people and their government, leaving many feeling disillusioned with the system. But I believe in the greatness of our nation and the resilience of its people.</p>
+<blockquote>
+<p>“Together, we can achieve a brighter future.”</p>
+</blockquote>
+<p>Both sides of the political spectrum have divided us as a people and a nation. This division only weakens us. We must remember that we are one people, living under the same Constitution. It is time to come together, united by our shared values and common goals, to restore the strength of our nation.</p>
+<h3>Restoring Our Identity</h3>
+<p>Restoring our national identity and pride in ourselves is critical for the sovereignty and future of our country. If we don’t prioritize ourselves, our interests, and our people, we allow other nations to take advantage of our divisions and weaknesses. We must stand together, strong and united, to rebuild what has been lost.</p>
+<h3>Hope and Opportunity</h3>
+<p>We must restore what once made America a beacon of hope—a place where hard work, fairness, and transparency can allow everyone to achieve their dreams. Through policies that emphasize accountability, sustainability, and the protection of our fundamental rights, we will rebuild the foundations of the American Dream.</p>
+<h4>Addressing Obesity</h4>
+<p>One of the pressing issues we face today is the epidemic of <strong>obesity</strong>, which consumes American lives and prosperity. This crisis not only affects individual health but also burdens our healthcare system and stifles economic growth. We must take decisive action to promote healthier lifestyles and ensure that our citizens can live fulfilling, productive lives.</p>
+<h4>Foreign Policy Focus</h4>
+<p>As we confront external influences, such as questionable alliances with countries like <em>Israel</em>, we must put the American people's interests first. Our foreign policy should be driven by what strengthens our nation, not by serving the agendas of so-called allies who do not stand by us in times of need. It's time for leadership that works for the American people—not for corrupt officials or foreign powers.</p>
+<h3>Restoring National Identity</h3>
+<p>To restore our national unity and reinforce a shared respect, I propose we revive the <strong>Bellamy salute</strong> as our official gesture of respect. Originally adopted alongside the Pledge of Allegiance, the Bellamy salute was intended as a powerful symbol of unity and pride, rooted in the gestures of respect dating back to ancient Rome. This salute carries with it a sense of pride and discipline, reinforcing the collective respect we hold for our nation and one another.</p>
+<h4>Why the Bellamy Salute?</h4>
+<p>The Bellamy salute is a gesture that symbolizes not only patriotism but also respect and solidarity, intended to elevate our nation's values and traditions. By reinstating this gesture, we can create a deeper, more symbolic connection to our shared heritage and national identity.</p>
+<blockquote cite="https://en.wikipedia.org/wiki/Bellamy_salute">
+"The Bellamy salute was first used in conjunction with the American Pledge of Allegiance, representing unity and national respect before it was later replaced by the hand-over-heart gesture."
+</blockquote>
+<h3>Restoration of the American Flag Spirit</h3>
+<p>In honoring our national identity, I will introduce a measure that requires the U.S. flag to be displayed and respected in every classroom. Our flag symbolizes the unity and values of our country, and it deserves to be upheld with reverence and pride.</p>
+<p>Additionally, I propose that the <strong>Pledge of Allegiance be recited daily</strong>, either through a school-wide intercom announcement or as a collective recitation within each classroom. Students who choose not to participate in the pledge will be expected to step outside any room where it is taking place, allowing them to quietly opt out while preserving the solemnity and respect of the moment for others. This approach promotes both freedom of choice and respect for the tradition.</p>
+<hr>
+<p><strong>Together, we will restore America to its rightful place as a nation of unity, pride, and purpose, grounded in integrity, freedom, and opportunity for all.</strong></p>`;
                 image = 'American-Dream-Quotes.jpg'; // Replace with actual image path
                 break;
         }
